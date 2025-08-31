@@ -1,0 +1,145 @@
+:root {
+    --bg-primary: #0A0F1E;
+    --bg-secondary-translucent: rgba(23, 31, 58, 0.6);
+    --text-primary: #EAEAEA;
+    --accent-primary: #00F6FF;
+    --accent-secondary: #FF00E5;
+    --shadow-primary: rgba(0, 246, 255, 0.6);
+    --shadow-secondary: rgba(255, 0, 229, 0.6);
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}   
+
+.logo img{
+    width: 240px;
+    height: 60px;
+}
+
+/* header .links {
+    padding-top: 10px;
+    padding-right: 20px;
+} */
+
+header .links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+}
+
+header .links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .links a:hover {
+    color: var(--accent-primary);
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+    fill: var(--text-primary);
+    background-color: transparent;
+    border: none;
+    /* display: none; */
+}
+
+.mobile-option {
+    position: absolute;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100svh;
+    background-color: var(--bg-secondary-translucent);
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.mobile-option .cross {
+    width: fit-content;
+    font-size: 26px;
+    border: none;
+    /* background-color: white; */
+    border: 1px solid black;
+    color: var(--text-primary);
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-option div {
+    padding: 10px 5px;
+    top: 0px;
+    border-bottom: 0.5px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mobile-option div a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.mobile-option div a:hover {
+    color: var(--accent-primary);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.content {
+    color: var(--text-primary);
+    text-align: center;
+    padding: 100px 40px;
+}
+
+.content h1 {
+    font-size: 48px;
+    background-image: linear-gradient(45deg, 
+        var(--accent-primary), 
+        var(--accent-secondary)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.content p {
+    font-size: 22px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow-primary), 0 4px 15px var(--shadow-secondary);    
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px var(--shadow-primary), 0 10px 20px var(--shadow-secondary);
+}
