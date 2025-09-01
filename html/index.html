@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Navigation bar -->
     <header>
         <div class="logo">
             <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
@@ -14,33 +16,72 @@
         <div class="links">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Certifications</a></li>
-                <li><a href="#">Coding Profiles</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <div><a href="#skills">Skills</a></div>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#coding">Coding Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <button class="menu" onclick="Open()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></button>
         <div class="mobile-option">
             <span class="cross" onclick="Close()">&times</span>
             <div><a href="index.html">Home</a></div>
-            <div><a href="about.html">About</a></div>
-            <div><a href="#">Education</a></div>
-            <div><a href="#">Certifications</a></div>
-            <div><a href="#">Coding Profiles</a></div>
-            <div><a href="#">Contact</a></div>
+            <div><a href="#about">About</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#education">Education</a></div>
+            <div><a href="#certifications">Certifications</a></div>
+            <div><a href="#coding">Coding Profiles</a></div>
+            <div><a href="#contact">Contact</a></div>
         </div>
     </header>
+
+    <!-- Hero section -->
     <div class="hero">
         <div class="content">
             <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects and skills.</p>
+            <p>I am Chandra Vamsi. Welcome to my portfolio.</p>
         </div>
         <div class="image">
             <img src="../assets/images/MYPIC.png" alt="Hero Image">
         </div>
-    </div>
+    </div><br><br><br>
+
+    <!-- About section -->
+    <div class="about" id="about"> 
+        <h2>About Me</h2><br>
+        <div class="about-content">
+            <p>"I am <b>Chandra Vamsi Teja Venkata Rayudu</b>, a B.Tech 2nd-year (CSE) student, passionate about learning and exploring new technologies. As I progress in my academic journey, I am continuously enhancing my technical skills and problem-solving abilities, with a strong focus on Data Structures and Algorithms."</p>
+            <p>Beyond coding, I actively engage in collaborative projects and strive to develop my leadership skills by taking initiative in team activities. I enjoy solving complex problems and am always eager to learn new concepts that help me grow both technically and personally. I am excited to apply my knowledge, gain hands-on experience, and work on projects that challenge and improve my skills.</p>
+        </div>
+    </div><br><br><br>
+
+    <!-- Skills section -->
+    <div class="skils" id="skills">
+        <h2>Skills</h2>
+    </div> <br><br><br>
+
+    <!-- Education section -->
+    <div class="education" id="education">
+        <h2>Education</h2>
+    </div><br><br><br>
+
+    <!-- Certifications Section -->
+    <div class="certifications" id="certifications">
+        <h2>Certifications</h2>
+    </div><br><br><br>
+
+    <!-- Coding Profiles Section -->
+    <div class="coding" id="coding">
+        <h2>Coding Profiles</h2>
+    </div><br><br><br>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+    </div><br><br><br>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
