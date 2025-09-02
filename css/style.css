@@ -165,3 +165,36 @@ h2 {
     font-size: 20px;
     line-height: 1.6;
 }
+
+.edudetails {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.edudetails div {
+    background-color: var(--bg-secondary-translucent);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px var(--shadow-primary), 0 4px 10px var(--shadow-secondary);
+    transition: transform 0.3s ease;
+    width: 30%;
+    text-align: center;
+}
+
+.edudetails div:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 20px var(--shadow-primary), 0 8px 20px var(--shadow-secondary);
+}
+
+.edudetails div b {
+    font-size: 18px;
+    line-height: 40px;
+    color: var(--accent-primary);
+}
+
+.edudetails div p, .edudetails div span {
+    color: var(--accent-secondary);
+    font-size: 16px;
+}
