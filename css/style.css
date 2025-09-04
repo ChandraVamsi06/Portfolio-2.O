@@ -1,7 +1,7 @@
 :root {
   --bg-primary: #000000;                      /* Challenger Black */
   --bg-secondary: #1B1B1B;                    /* Deep Charcoal for cards/panels */
-  --bg-secondary-translucent: rgba(27, 27, 27, 0.6);
+  --bg-teritiary: #333333;                    /* Dark Gray for additional elements */
   --text-primary: #F5F5F5;                    /* Alabaster White for readability */
   --text-secondary: #AAAAAA;                  /* Lighter gray for muted text */
   --accent-primary: #D71920;                  /* Bold Red for main actions */
@@ -11,19 +11,29 @@
   --shadow-secondary: rgba(255, 192, 0, 0.5); /* Shadow for gold elements */
 }
 
+html {
+    scroll-padding-top: 150px; /* adjust to your header height */
+}
+
 body {
     background-color: var(--bg-primary);
     margin: 0;
+    font-family: 'Fredoka', sans-serif;
     /* overflow: hidden; */
 }
 
 header {
+    width: 100%;
+    box-sizing: border-box;
     background-color: transparent;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    position: fixed;
+    /* margin: 0; */
+    z-index: 100%;
 }    
 
 .logo img{
@@ -53,10 +63,11 @@ header .links a:hover {
     fill: var(--text-primary);
     background-color: transparent;
     border: none;
-    /* display: none; */
+    display: none;
 }
 
 .mobile-option {
+    display: none;
     position: absolute;
     top: 0px;
     right: -250px;
@@ -98,9 +109,11 @@ header .links a:hover {
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
+    padding-top: 150px;
 }
 
 .content {
@@ -149,6 +162,7 @@ header .links a:hover {
     background-color: var(--bg-secondary);
     padding: 20px 20px;
     border-radius: 10px;
+    margin-top: 100px;
 }
 
 h2 {
@@ -166,9 +180,14 @@ h2 {
     line-height: 1.6;
 }
 
+.education {
+    margin-top: 100px;
+}
+
 .edudetails {
     padding: 30px;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
     gap: 30px;
 }
@@ -197,4 +216,207 @@ h2 {
 .edudetails div p, .edudetails div span {
     color: var(--accent-secondary);
     font-size: 16px;
+}
+
+.certifications {
+    margin-top: 100px;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.certificates div {
+    background-color: var(--bg-secondary-translucent);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px var(--shadow-primary), 0 4px 10px var(--shadow-secondary);
+    transition: transform 0.3s ease;
+}
+
+.certificates div b {
+    color: var(--accent-primary);
+    font-size: 22px;
+}
+
+.certificates div p {
+    color: var(--accent-secondary);
+    font-size: 15px;
+}
+
+.certificates div:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 20px var(--shadow-primary), 0 8px 20px var(--shadow-secondary);
+}
+
+.coding {
+    margin-top: 100px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.profiles div {
+    background-color: var(--bg-secondary-translucent);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px var(--shadow-primary), 0 4px 10px var(--shadow-secondary);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.profiles div:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 20px var(--shadow-primary), 0 8px 20px var(--shadow-secondary);
+}
+
+.profiles div button {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profiles div button:hover {
+    background-color: var(--accent-secondary);
+    color: var(--bg-secondary);
+}
+
+.profiles div b {
+    color: var(--accent-primary);
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.contact-content {
+    padding: 30px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    width: 40%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 30px 0 0 30px;
+    transition: transform 0.3s ease;
+}
+
+.profile-links h3 {
+    color: var(--accent-primary);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.profile-links div {
+    display: flex;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    padding: 15px;
+    height: 20px;
+}
+
+.profile-links div svg {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    fill: var(--text-primary);
+}
+
+.profile-links div a {
+    color: var(--text-secondary);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.profile-links div a:hover {
+    color: var(--accent-secondary);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: var(--bg-teritiary);
+    width: 50%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 0 30px 30px 0;
+    transition: transform 0.3s ease;
+}
+
+.form h3 {
+    color: var(--accent-primary);
+    font-size: 30px;
+    text-align: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.form form input, .form form textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--text-secondary);
+    border-radius: 0;
+    width: 80%;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 16px;
+    resize: none;
+}
+
+.form form input::placeholder, .form form textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+.form form input:focus, .form form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid var(--shadow-secondary);
+}
+
+.form form button {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    /* width: 50%; */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.form form button:hover {
+    background-color: var(--accent-secondary);
+    color: var(--bg-secondary);
 }
