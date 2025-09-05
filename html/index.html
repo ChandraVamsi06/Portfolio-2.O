@@ -20,10 +20,9 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <div><a href="#skills">Skills</a></div>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#coding">Coding Profiles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,6 +31,8 @@
             <span class="cross" onclick="Close()">&times</span>
             <div><a href="index.html">Home</a></div>
             <div><a href="#about">About</a></div>
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#experience">Experience</a></div>
             <div><a href="#skills">Skills</a></div>
             <div><a href="#education">Education</a></div>
             <div><a href="#certifications">Certifications</a></div>
@@ -52,101 +53,76 @@
     </div><br><br><br>
 
     <!-- About section -->
-    <div class="about" id="about"> 
-        <h2>About Me</h2><br>
-        <div class="about-content">
+    <div class="about animate-on-scroll" id="about"> 
+        <h2 class="animate-on-scroll">About Me</h2><br>
+        <div class="about-content animate-on-scroll">
             <p>"I am <b>Chandra Vamsi Teja Venkata Rayudu</b>, a B.Tech (CSE) student, passionate about learning and exploring new technologies. As I progress in my academic journey, I am continuously enhancing my technical skills and problem-solving abilities, with a strong focus on Data Structures and Algorithms."</p>
             <p>Beyond coding, I actively engage in collaborative projects and strive to develop my leadership skills by taking initiative in team activities. I enjoy solving complex problems and am always eager to learn new concepts that help me grow both technically and personally. I am excited to apply my knowledge, gain hands-on experience, and work on projects that challenge and improve my skills.</p>
         </div>
     </div><br><br><br>
 
+    <!-- Projects section -->
+    <div class="projects" id="projects">
+        <h2 class="animate-on-scroll">Projects</h2>
+        <div class="project-cards animate-on-scroll">
+            <!-- Projects on JS -->
+            <!-- <div class="animate-on-scroll">
+                <img src="../assets/images/oryx.jpeg" alt="Oryx">
+            </div>
+            <div class="animate-on-scroll">
+                <h3>Oryx</h3>
+                <p>A conceptual design for a next-generation operating system interface with a focus on productivity and aesthetics.</p>
+                <div>
+                    <div class="technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>BootStrap</span>
+                    </div>
+                </div>
+                <button type="button" onclick="openOryx()">Open</button>
+            </div> -->
+        </div>
+    </div><br><br><br>
+
+    <div class="experience" id="experience">
+        <h2>Experience</h2>
+    </div><br><br><br>
+
     <!-- Skills section -->
-    <div class="skils" id="skills">
-        <h2>Skills</h2>
+    <div class="skills" id="skills">
+        <h2 class="animate-on-scroll">Skills</h2>
+        <div class="skill-cards animate-on-scroll">
+            <!-- Skills on JS -->
+        </div>
     </div> <br><br><br>
 
     <!-- Education section -->
-    <div class="education" id="education">
+    <div class="education animate-on-scroll" id="education">
         <h2>Education</h2>
         <div class="edudetails">
-            <div class="grad">
-                <b>B.Tech in Computer Science Engineering</b><br>
-                <span>Aditya Engineering College</span><br>
-                <span>2023 - Present</span><br>
-            </div>
-            <div class="inter">
-                <b>Intermediate</b><br>
-                <span>Aditya Junior College</span><br>
-                <span>2021 - 2023</span><br>
-            </div>
-            <div class="tenth">
-                <b>Class X</b><br>
-                <span>Aditya Public School</span><br>
-                <span>2020 - 2021</span><br>
-            </div>
+            <!-- Details on JS -->
         </div>
     </div><br><br><br>
 
     <!-- Certifications Section -->
-    <div class="certifications" id="certifications">
+    <div class="certifications animate-on-scroll" id="certifications">
         <h2>Certifications</h2>
         <div class="certificates">
-            <div class="redhat">
-                <b>C Essentials</b>
-                <p>Cisco Networking Academy</p>
-            </div>
-            <div class="redhat">
-                <b>C++ Essentials</b>
-                <p>Cisco Networking Academy</p>
-            </div>
-            <div class="redhat">
-                <b>Java Certified Foundations Associate</b>
-                <p>Oracle Academy</p>
-            </div>
-            <div class="redhat">
-                <b>Python Essentials</b>
-                <p>Cisco Networking Academy</p>
-            </div>
-            <div class="redhat">
-                <b>HTML & CSS</b>
-                <p>IT Specialist Pearson</p>
-            </div>
-            <div class="redhat">
-                <b>Red Hat Certified System Administrator</b>
-                <p>RedHat</p>
-            </div>
+            <!-- Certificates on JS -->
         </div>
     </div><br><br><br>
 
     <!-- Coding Profiles Section -->
-    <div class="coding" id="coding">
+    <div class="coding animate-on-scroll" id="coding">
         <h2>Coding Profiles</h2>
         <div class="profiles">
-            <div class="leetcode">
-                <b>LeetCode</b><br>
-                <button type="button" onclick="openLeetCode()">View Profile</button>
-            </div>
-            <div class="codechef">
-                <b>CodeChef</b><br>
-                <button type="button" onclick="openCodeChef()">View Profile</button>
-            </div>
-            <div class="geeksforgeeks">
-                <b>GeeksForGeeks</b><br>
-                <button type="button" onclick="openGeeksForGeeks()">View Profile</button>
-            </div>
-            <div class="HackerRank">
-                <b>HackerRank</b><br>
-                <button type="button" onclick="openHackerRank()">View Profile</button>
-            </div>
-            <div class="codeforces">
-                <b>Codeforces</b><br>
-                <button type="button" onclick="openCodeForces()">View Profile</button>
-            </div>
+            <!-- Profiles on JS -->
         </div>
     </div><br><br><br>
 
     <!-- Contact Section -->
-    <div class="contact" id="contact">
+    <div class="contact animate-on-scroll" id="contact">
         <h2>Contact</h2>
         <div class="contact-content">
             <!-- contact options -->
@@ -181,6 +157,10 @@
             </div>
         </div>
     </div><br><br><br>
+
+    <footer>
+        <p>&copy; 2025 Chandra Vamsi Sana. All rights reserved.</p>
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>
