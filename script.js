@@ -50,15 +50,15 @@ const skill_card = [
         "name": "C"
     },
     {
-        "icon": "./assets/icons/c++.png",
+        "icon": "./assets/icons/C++.png",
         "name": "C++"
     },
     {
-        "icon": "./assets/icons/java.png",
+        "icon": "./assets/icons/JAVA.png",
         "name": "Java"
     },
     {
-        "icon": "./assets/icons/python.png",
+        "icon": "./assets/icons/Python.png",
         "name": "Python"
     },
     {
@@ -66,31 +66,31 @@ const skill_card = [
         "name": "JavaScript"
     },
     {
-        "icon": "./assets/icons/html.png",
+        "icon": "./assets/icons/HTML.png",
         "name": "HTML"
     },
     {
-        "icon": "./assets/icons/css.png",
+        "icon": "./assets/icons/CSS.png",
         "name": "CSS"
     },
     {
-        "icon": "./assets/icons/sql.png",
+        "icon": "./assets/icons/SQL.png",
         "name": "SQL"
     },
     {
-        "icon": "./assets/icons/git.png",
+        "icon": "./assets/icons/Git.png",
         "name": "Git"
     },
     {
-        "icon": "./assets/icons/github.png",
+        "icon": "./assets/icons/GitHub.png",
         "name": "GitHub"
     },
     {
-        "icon": "./assets/icons/windows.png",
+        "icon": "./assets/icons/Windows.png",
         "name": "Windows"
     },
     {
-        "icon": "./assets/icons/linux.png",
+        "icon": "./assets/icons/Linux.png",
         "name": "Linux"
     }
 ]
