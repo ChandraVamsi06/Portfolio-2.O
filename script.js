@@ -9,7 +9,7 @@ function Open() {
 // Project cards
 const projects = [
     {
-        "image": "../assets/images/oryx.jpeg",
+        "image": "./assets/images/oryx.jpeg",
         "name": "Oryx",
         "description": "A conceptual design for a next-generation operating system interface with a focus on productivity and aesthetics.",
         "technologies": ["HTML", "CSS", "JavaScript", "BootStrap"],
@@ -40,57 +40,57 @@ projects.forEach(project => {
 });
 
 function openOryx() {
-    window.open("https://sanjaysahoo21.github.io/Oryx/", "_blank");
+    window.open("https://chandravamsi06.github.io/Oryx-OS/", "_blank");
 }
 
 // skill cards
 const skill_card = [
     {
-        "icon": "../assets/icons/C.png",
+        "icon": "./assets/icons/C.png",
         "name": "C"
     },
     {
-        "icon": "../assets/icons/c++.png",
+        "icon": "./assets/icons/c++.png",
         "name": "C++"
     },
     {
-        "icon": "../assets/icons/java.png",
+        "icon": "./assets/icons/java.png",
         "name": "Java"
     },
     {
-        "icon": "../assets/icons/python.png",
+        "icon": "./assets/icons/python.png",
         "name": "Python"
     },
     {
-        "icon": "../assets/icons/JS.png",
+        "icon": "./assets/icons/JS.png",
         "name": "JavaScript"
     },
     {
-        "icon": "../assets/icons/html.png",
+        "icon": "./assets/icons/html.png",
         "name": "HTML"
     },
     {
-        "icon": "../assets/icons/css.png",
+        "icon": "./assets/icons/css.png",
         "name": "CSS"
     },
     {
-        "icon": "../assets/icons/sql.png",
+        "icon": "./assets/icons/sql.png",
         "name": "SQL"
     },
     {
-        "icon": "../assets/icons/git.png",
+        "icon": "./assets/icons/git.png",
         "name": "Git"
     },
     {
-        "icon": "../assets/icons/github.png",
+        "icon": "./assets/icons/github.png",
         "name": "GitHub"
     },
     {
-        "icon": "../assets/icons/windows.png",
+        "icon": "./assets/icons/windows.png",
         "name": "Windows"
     },
     {
-        "icon": "../assets/icons/linux.png",
+        "icon": "./assets/icons/linux.png",
         "name": "Linux"
     }
 ]
@@ -216,7 +216,6 @@ function viewRedHatCert() {
 const coding_profiles = [
     {
         "platform": "LeetCode",
-        "icon": "../assets/icons/leetcode.png",
         "function": "openLeetCode()"
     },
     {
