@@ -17,12 +17,13 @@ const projects = [
     },
 ];
 
-const container = document.querySelector('.project-cards');
-container.innerHTML = "";
+const container = document.querySelector('.projects');
+
+var count = 0;
 
 projects.forEach(project => {
     const card = document.createElement('div');
-    card.className = "animate-on-scroll";
+    card.className = "project-cards animate-on-scroll";
     card.innerHTML = `
         <div><img src="${project.image}" alt="${project.name}"></div>
         <div>
@@ -36,11 +37,19 @@ projects.forEach(project => {
             <button type="button" onclick="${project.button.onclick}">${project.button.text}</button>
         </div>
     `;
+    // Responsive: always column direction for 768px and below
+    if(window.innerWidth > 768 && count % 2 !== 0) {
+        card.style.flexDirection = "row-reverse";
+    } else {
+        card.style.flexDirection = "column";
+    }
     container.appendChild(card);
+    count++;
+    
 });
 
 function openOryx() {
-    window.open("https://chandravamsi06.github.io/Oryx-OS/", "_blank");
+    window.open("https://sanjaysahoo21.github.io/Oryx/", "_blank");
 }
 
 // skill cards
@@ -85,14 +94,14 @@ const skill_card = [
         "icon": "./assets/icons/GitHub.png",
         "name": "GitHub"
     },
-    {
-        "icon": "./assets/icons/Windows.png",
-        "name": "Windows"
-    },
-    {
-        "icon": "./assets/icons/Linux.png",
-        "name": "Linux"
-    }
+    // {
+    //     "icon": "./assets/icons/Windows.png",
+    //     "name": "Windows"
+    // },
+    // {
+    //     "icon": "./assets/icons/Linux.png",
+    //     "name": "Linux"
+    // }
 ]
 
 // dynamically add skill cards
