@@ -432,6 +432,13 @@ h2 {
     box-shadow: 2px 4px 10px var(--shadow-primary), 0 4px 10px var(--shadow-secondary);
     transition: transform 0.3s ease;
     text-align: center;
+    width: 230px;
+    max-width: 230px;
+    min-width: 140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profiles div:hover {
@@ -603,7 +610,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    /* Preserve desktop layout and sizing for all sections */
     header {
         flex-direction: row;
         padding: 25px;
@@ -769,7 +775,16 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
+    .profiles div {
+        width: 180px;
+        max-width: 180px;
+        min-width: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* Header */
     header {
         flex-direction: row;
@@ -822,6 +837,24 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    .skill-cards div {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .edudetails div {
+        box-shadow: 2px 2px 5px var(--shadow-primary), 0 2px 5px var(--shadow-secondary);
+    }
+
+    .certificates div {
+        box-shadow: 2px 2px 5px var(--shadow-primary), 0 2px 5px var(--shadow-secondary);
+    }
+
+    .profiles div {
+        box-shadow: 2px 2px 5px var(--shadow-primary), 0 2px 5px var(--shadow-secondary);
+    }
+
     .contact {
         margin-top: 40px;
     }
@@ -854,5 +887,220 @@ footer {
     footer {
         font-size: 14px;
         padding: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .logo img {
+        width: 160px;
+        height: 50px;
+    }
+    header .links ul {
+        gap: 15px;
+    }
+    header .links a {
+        font-size: 16px;
+    }
+    .menu {
+        width: 32px;
+        height: 32px;
+    }
+    .mobile-option {
+        width: 180px;
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+    }
+    .content {
+        padding: 40px 10px;
+    }
+    .content h1 {
+        font-size: 32px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .image {
+        max-width: 220px;
+        margin-bottom: 20px;
+    }
+
+    /* About Section */
+    .about {
+        margin: 10px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .about-content {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    /* Projects Section */
+    .projects {
+        margin-top: 40px;
+    }
+    .project-cards {
+        flex-direction: column !important;
+        gap: 12px;
+        padding: 10px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-cards div {
+        width: 100% !important;
+        padding: 8px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .project-cards div img {
+        width: 100%;
+        height: auto;
+    }
+    .project-cards h3 {
+        font-size: 18px;
+    }
+    .project-cards p {
+        font-size: 13px;
+    }
+
+    /* Skills Section */
+    .skills {
+        margin-top: 40px;
+    }
+    .skill-cards {
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill-cards div {
+        width: 90px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .skill-cards div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Education Section */
+    .education {
+        margin-top: 40px;
+    }
+    .edudetails {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+        align-items: center;
+    }
+    .edudetails div {
+        width: 100%;
+        padding: 8px;
+        margin: 0 auto;
+    }
+    .edudetails div b {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .edudetails div p, .edudetails div span {
+        font-size: 13px;
+    }
+
+    /* Certifications Section */
+    .certifications {
+        margin-top: 40px;
+    }
+    .certificates {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 10px;
+    }
+    .certificates div {
+        padding: 8px;
+    }
+    .certificates div b {
+        font-size: 16px;
+    }
+    .certificates div p {
+        font-size: 12px;
+    }
+
+    /* Coding Profiles Section */
+    .coding {
+        margin-top: 40px;
+    }
+    .profiles {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 10px;
+        justify-items: center;
+    }
+    .profiles div button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .profiles div {
+        padding: 8px;
+        margin: 0 auto;
+    }
+    .profiles div b {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* Contact Section */
+    .contact {
+        margin-top: 30px;
+    }
+    .contact-content {
+        flex-direction: column;
+        padding: 5px;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-links, .form {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 6px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+    .form {
+        border-radius: 10px;
+    }
+    .profile-links h3, .form h3 {
+        font-size: 20px;
+    }
+    .profile-links div a, .form form input, .form form textarea {
+        font-size: 14px;
+    }
+    .form form button {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 10px;
     }
 }

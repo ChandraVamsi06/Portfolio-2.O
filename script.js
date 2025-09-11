@@ -94,14 +94,6 @@ const skill_card = [
         "icon": "./assets/icons/GitHub.png",
         "name": "GitHub"
     },
-    // {
-    //     "icon": "./assets/icons/Windows.png",
-    //     "name": "Windows"
-    // },
-    // {
-    //     "icon": "./assets/icons/Linux.png",
-    //     "name": "Linux"
-    // }
 ]
 
 // dynamically add skill cards
