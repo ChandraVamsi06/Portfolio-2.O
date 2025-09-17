@@ -302,7 +302,7 @@ h2 {
     flex-direction: column;
     align-items: center ;
     padding: 15px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--text-secondary);
     border-radius: 50px;
     transition: transform 0.3s ease;
     width: 200px;
@@ -1107,7 +1107,7 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -1201,7 +1201,7 @@ footer {
         font-size: 10px;
     }
     .project-cards p {
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .skills {
@@ -1236,16 +1236,16 @@ footer {
         align-items: center;
     }
     .edudetails div {
-        width: 100%;
+        width: 90%;
         padding: 2px;
         margin: 0 auto;
     }
     .edudetails div b {
-        font-size: 8px;
+        font-size: 12px;
         line-height: 18px;
     }
     .edudetails div p, .edudetails div span {
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .certifications {
@@ -1255,8 +1255,10 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 2px;
+        justify-items: center;
     }
     .certificates div {
+        width: 90%;
         padding: 2px;
     }
     .certificates div b {
