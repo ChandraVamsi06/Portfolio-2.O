@@ -11,6 +11,8 @@
   --shadow-secondary: rgba(255, 192, 0, 0.5); /* Shadow for gold elements */
 }
 
+/* --button-primary: #63d620;                 Green for buttons */
+
 html {
     scroll-padding-top: 150px;
     scroll-behavior: smooth;
@@ -367,6 +369,7 @@ h2 {
 .edudetails div p, .edudetails div span {
     color: var(--accent-secondary);
     font-size: 16px;
+    line-height: 32px;
 }
 
 /* Certifications section */
@@ -619,7 +622,7 @@ footer {
     font-size: 14px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
     header {
         flex-direction: row;
         padding: 25px;
@@ -785,7 +788,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 900px) { 
     .profiles div {
         width: 180px;
         max-width: 180px;
@@ -900,7 +903,7 @@ footer {
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 700px) {
     /* Header */
     header {
         flex-direction: row;
@@ -1116,7 +1119,7 @@ footer {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 400px) {
     header {
         flex-direction: row;
         justify-content: space-between;
