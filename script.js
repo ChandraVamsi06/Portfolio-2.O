@@ -6,6 +6,10 @@ function Open() {
     document.getElementsByClassName('mobile-option')[0].style = "right: 0px;"
 }
 
+const downloadResume = () => {
+    window.location.href = "https://drive.google.com/file/d/1VwKfCtbjdrD11iZCslG_wz9jd5lAkuzg/view?usp=sharing";
+}
+
 // Project cards
 const projects = [
     {

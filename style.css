@@ -49,6 +49,10 @@ body::-webkit-scrollbar-track {
   background: transparent;
 }
 
+button {
+    font-family: 'Fredoka', sans-serif;
+}
+
 /* Header section */
 header {
     width: 100%;
@@ -166,6 +170,23 @@ header .links a:hover {
     font-size: 22px;
 }
 
+.content button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: var(--bg-primary);
+    background-color: var(--accent-secondary);
+    border: none;
+    transition: 0.3s ease;
+}
+
+.content button:hover {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    cursor: pointer ;
+}
+
 .image {
     max-width: 500px;
     height: auto;
@@ -281,15 +302,17 @@ h2 {
     color: var(--bg-secondary);
     border: none;
     margin: 20px 0;
+    width: 90px;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .project-cards div button:hover {
     background-color: var(--accent-primary);
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 /* Skills section */
@@ -836,6 +859,12 @@ footer {
     .content {
         padding: 100px 40px;
     }
+    .content button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 17px;
+    }
     .project-cards {
         flex-direction: column !important;
         gap: 16px;
@@ -939,10 +968,16 @@ footer {
         padding: 40px 10px;
     }
     .content h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
     .content p {
-        font-size: 16px;
+        font-size: 19px;
+    }
+    .content button {
+        width: 130px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 15px;
     }
     .image {
         max-width: 220px;
@@ -956,10 +991,10 @@ footer {
         margin-top: 40px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .about-content {
-        font-size: 14px;
+        font-size: 18px;
         padding: 0;
     }
 
@@ -1160,10 +1195,17 @@ footer {
         justify-content: center;
     }
     .content h1 {
-        font-size: 18px;
+        font-size: 30px;
+        margin: 5px;
     }
     .content p {
-        font-size: 10px;
+        font-size: 17px;
+    }
+    .content button {
+        width: 100px;
+        height: 35px;
+        border-radius: 50px;
+        font-size: 11px;
     }
     .image {
         max-width: 200px;
@@ -1181,10 +1223,10 @@ footer {
         margin-top: 20px;
     }
     h2 {
-        font-size: 12px;
+        font-size: 20px;
     }
     .about-content {
-        font-size: 8px;
+        font-size: 15px;
         padding: 0 1px;
     }
 
